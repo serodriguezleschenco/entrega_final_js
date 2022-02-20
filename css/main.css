@@ -1,0 +1,228 @@
+@charset "UTF-8";
+body {
+  background: linear-gradient(180deg, white 0%, #a3c1e6 100%);
+  padding: 50px 30px 30px 40px;
+  margin-left: 10px;
+  height: 100%;
+  width: 95%; }
+
+header {
+  height: 95%;
+  width: 95%; }
+
+footer {
+  width: 100%; }
+
+h1 {
+  color: #578ebb;
+  text-align: center; 
+  font-weight: bold;}
+
+h2 {
+  color: black;
+  text-align: center; }
+
+h3 {
+  color: white;
+  text-align: center; }
+
+h4 {
+  border: 0.5px solid #777;
+  background-color: #52b3eb;
+  text-align: center;
+  padding: 4px; }
+
+h6 {
+  color: black;
+  text-align: center; }
+
+/* Tratamiento imágenes */
+.logo {
+  align-items: center;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
+#imgmeme{
+  height: 100%;
+  width: 100%; }
+
+.imgcoin{
+  height: 25%;
+  width: 25%;  
+  border-radius: 10%;
+  background-size: 100% auto;
+  border: 0.5px solid #777}
+
+.imgaltcoin{
+  height: 45%;
+  width: 45%;  }
+ /* border-radius: 10%;
+  background-size: 100% auto;
+  border: 0.5px solid #777}*/
+
+/* Logo AMD & Intel */
+#img-dest {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 45%;
+  height: auto; }
+
+/* Variables para imágen de usuario */
+.img-user {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 250px;
+  height: auto; }
+
+.mainContainer{
+  display: flex;
+  flex-direction: row;
+  width:100%; }
+ 
+/* Tratamiento videos */
+.video-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 800px;
+  height: auto; }
+
+.lineaResaltadaAMD {
+  color: #0a6901;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center; }
+
+.lineaResaltadaINTEL {
+  color: #2a2de8;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center; }
+
+/* Título Sección con gradientes*/
+.gradientes {
+  background: linear-gradient(90deg, white 0%, #32d2d0 35%, #a4bcc1 90%);
+  border: 0.25px solid grey; }
+
+/* Listas */
+.listas {
+  list-style:none; }
+
+footer {
+  background-color: #353535; }
+  footer .FooterContactos {
+    padding: 1rem; }
+  footer .FooterContactos .TituloF1 {
+    width: fit-content; }
+  footer .FooterContactos .TituloF1 p {
+    text-align: center;
+    font-size: 1.05rem;
+    color: white !important; }
+  footer .FooterContactos .FooterRed {
+    height: 4rem;
+    margin-bottom: 1rem; }
+  footer .FooterContactos .FooterRed .col-1 {
+    width: fit-content;
+    padding: 0 !important; }
+  footer .FooterContactos .FooterRed .col-1 a {
+    list-style: none;
+    margin: 0;
+    padding: 0 !important; }
+  footer .FooterContactos .FooterRed .col-1 a img {
+    height: 2.25rem;
+    width: 2.25rem;
+    opacity: 60%;
+    padding: 0 !important; }
+  footer .FooterContactos .FooterRed .col-1 a img:hover {
+    transition: .5s;
+    transform: scale(1.5);
+    opacity: 100%; }
+  footer .Ubicación {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  footer .Ubicación .GoogleMaps {
+    margin: auto;
+    padding: 0;
+    border-radius: .5rem;
+    border: black 1px solid;
+    width: 11rem;
+    height: 11rem; }
+  footer .CopyRight {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+    padding: 0; }
+  footer .CopyRight .CopyRight h5 {
+    margin-top: 1rem !important;
+    margin-bottom: .5rem !important;
+    font-size: 1rem; }
+  footer .CopyRight .CopyRight p {
+    font-size: .75rem;
+    margin: 0; }
+
+  .CopyRight {
+    text-align: center;
+    margin-bottom: 1rem; }
+  .CopyRight h5 {
+    color: white;
+    margin-top: 1rem !important;
+    margin-bottom: .5rem !important;
+    padding: 0;
+    font-size: 1rem; }
+  .CopyRight p {
+    color: white;
+    font-size: .75rem;
+    padding: 0;
+    margin: 0; }
+
+/* Media queries -> Modificación tamaño fonts*/
+@media only screen and (min-width: 340px) {
+  h1 {
+    font-size: medium;
+    margin: 10px; }
+  h2 {
+    font-size: 0.95rem; }
+  h3 {
+    font-size: 0.85rem; }
+  h4 {
+    font-size: 0.75rem; }
+  p {
+    font-size: 0.70rem; }
+  th {
+    font-size: x-small; } }
+
+@media only screen and (min-width: 720px) {
+  h1 {
+    font-size: x-large;
+    margin: 5px; }
+  h2 {
+    font-size: 1.25rem; }
+  h3 {
+    font-size: 1.15rem; }
+  h4 {
+    font-size: 1.05rem; }
+  p {
+    font-size: 1.00rem; }
+  th {
+    font-size: medium; } }
+
+@media only screen and (min-width: 1020px) {
+  h1 {
+    font-size: xx-large;
+    margin: 0px; }
+  h2 {
+    font-size: 1.45rem; }
+  h3 {
+    font-size: 1.35rem; }
+  h4 {
+    font-size: 1.25rem; }
+  p {
+    font-size: 1.15rem; }
+  th {
+    font-size: large; } }

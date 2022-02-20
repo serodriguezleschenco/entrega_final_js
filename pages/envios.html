@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+    <!-- Bootstrap -->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!--Hoja de estilo CSS-->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!--API Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+   
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Script Java-->
+    <script src="/js/main.js" defer></script>
+
+    <!--Nombre de página que muestra navegador-->
+    <title>Envíos - Iron Systems</title>
+
+    <!--Metas-->
+    <meta name="description" content="Averiguá los medios de envíos y forma de retiro de equipos de minería de cryptomonedas profesionales">
+    <meta name="keywords" content="Minería Criptomonedas, Rosario, Dirección, Mapa, Envíos, Retiro, Hardware, BTC, ETH, USDT, DAI, Local">
+
+  </head>
+
+<body>
+  <header>
+    <br>
+    <h1>Iron Systems</h1>
+    <div>
+        <img class="logo" src="../public/img/logo.png" alt="logo de la empresa">
+    </div>
+
+</header>
+
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">Menú</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rigs.html">Rigs Minería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="envios.html">Envíos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"> </a>
+          </li>
+          <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img src="../public/img/carrito.png" height ="28" width="28"/>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <h2><strong>Formas de Entrega</strong></h2>
+      <br>
+      <br>    
+      <!--Formas de entregas-->
+              <h2><strong>Rosario y alrededores: envío mediante transporte de la empresa. Nos comunicaremos para coordinar día y horario. <u>Gratuito</u>. </strong></h2>
+              <h2>Enviamos a todo el país mediante: Andreani, OCASA, OCA u otro transporte de acuerdo a solicitud del Cliente.</h2>
+              <h2>Retiralo peronalmente en nuestro local.</h2>
+      <br>    
+      <div>
+          <img class="logo" src="../public/img/envios.png" alt="Camión repartidor">
+      </div>
+      <br>
+      <br>    
+          <h2><strong>Que la distancia NO TE DETENGA!!!!</strong></h2>
+      <br>    
+      <br>    
+          <center>
+            <img class="imgaltcoin" src="../public/img/altcoins.png" alt="logos altcoins">
+          </center>      
+      <br>  
+    </section>
+      
+    <!-- Modal Carrito -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                <th scope="col">Detalle</th>
+                <th scope="col">Precio</th>
+                </tr>
+              </thead>
+              <tbody id="carrito"></tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" id="procesar-pedido">Comprar</button>
+            <button type="button" class="btn btn-danger" id="vaciar-carrito" onclick="location.reload()">Vaciar Carrito</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir Comprando</button>       
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    
+  <footer class="container-fluid">
+    <div class="container-lg">
+        <hr>
+        <div class="row align-items-center justify-content-around">
+            <div class="FooterContactos row flex-column col-8 col-md-3 align-items-center justify-content-center">
+                <div class="TituloF1">
+                    <h3>Seguinos en las redes</h3>
+                </div>
+                <div class="col-12 row FooterRed align-items-center justify-content-around">
+                    <div class="col-1">
+                        <a href="https://www.facebook.com/">
+                            <img src="../public/img/ico-fb.png" alt="Facebook">
+                        </a>
+                    </div>
+                    <div class="col-1 ">
+                        <a href="https://instagram.com/">
+                            <img src="../public/img/ico-ig.png" alt="Instagram">
+                        </a>
+                    </div>
+                    <div class="col-1 ">
+                        <a  href="https://twitter.com/">
+                            <img class="" src="../public/img/ico-tw.png"  alt="Twitter">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="Ubicación row offset-md-1 col-md-4">
+                <iframe class="GoogleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.5793957889323!2d-60.67271288431471!3d-32.93570917866564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab541f9b1753%3A0xaf5e61ee97c1b8ad!2sTucum%C3%A1n%203554%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1644181996346!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="CopyRight col-md-4">
+              <p>
+                Tucumán 3554 - Rosario
+                <br>
+                Whats App: 5493417181537
+                <br>
+                e-mail: contacto@ironsystems.com
+                <br>
+                <br>
+                <strong>Horario de Atención: 8 a 12 y 14 a 18 hs.</strong>
+                <br>
+                <br>
+                © Copyright 2022 - Iron Systems
+                <br>
+                Todos los derechos reservados.
+              </p>
+            </div>
+        </div>
+    </div>   
+</footer>
+
+<!--Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
