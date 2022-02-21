@@ -154,7 +154,7 @@ $(document).on('click', '#vaciar-carrito',()=>{
 
 // Envío de Datos a la página de compra
 $(document).on('click', '#procesar-pedido',()=>{
-	location.href = "../pages/compra.html";
+	location.href = "./pages/compra.html";
 })
 
 
