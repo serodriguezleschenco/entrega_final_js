@@ -9,7 +9,7 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 let productos;
 // Conexión a "BD" Local
 function obtenerProductos() {
-	$.get("/data/productos.json", (respuesta) => {
+	$.get("./data/productos.json", (respuesta) => {
 		productos = respuesta.productos;
 		cargarProductos(productos, true);
 	});
